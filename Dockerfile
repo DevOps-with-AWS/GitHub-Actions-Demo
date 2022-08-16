@@ -1,3 +1,3 @@
 FROM tomcat
-COPY ./web-pages/*.* /webapps/
+COPY ./web-pages/*.* /usr/local/webapps/
 EXPOSE 8080
