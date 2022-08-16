@@ -16,8 +16,4 @@ jobs:
     - run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/webpages .
     - run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/webpages:latest
     - run: echo "my task is finished"
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - run: echo "this is 2nd task" 
+
