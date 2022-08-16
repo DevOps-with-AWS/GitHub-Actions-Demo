@@ -1,3 +1,3 @@
-FROM nginx:latest
-COPY ./web-pages/*.* /usr/share/nginx/html/
-EXPOSE 80
+FROM tomcat
+COPY ./web-pages/*.* /webapps/
+EXPOSE 8080
