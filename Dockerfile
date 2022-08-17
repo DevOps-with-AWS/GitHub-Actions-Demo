@@ -1,4 +1,4 @@
 FROM tomcat
-RUN mkdir -p /usr/local/webapps/my-app
-COPY ./web-pages/*.* /usr/local/webapps/my-app/
+RUN mkdir -p /usr/local/webapps/myapp/
+COPY ./web-pages/*.* /usr/local/webapps/myapp/
 EXPOSE 8080
